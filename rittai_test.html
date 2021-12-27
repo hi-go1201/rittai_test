@@ -14,8 +14,31 @@
     ></script>
   </head>
   <body>
+    <h3>Default glb</h3>
     <model-viewer
-      src="./obj/touboku_png_resize_1024_etc1s_draco.glb"
+      src="./obj/clt76.glb"
+      shadow-intensity="1"
+      ar
+      ar-modes="webxr scene-viewer quick-look"
+      alt="A 3D model"
+      auto-rotate
+      camera-controls
+    >
+    </model-viewer>
+    <h3>KTX:ETC1S + Draco glb</h3>
+    <model-viewer
+      src="./obj/clt76_2048_etc1s_draco_r2.glb"
+      shadow-intensity="1"
+      ar
+      ar-modes="webxr scene-viewer quick-look"
+      alt="A 3D model"
+      auto-rotate
+      camera-controls
+    >
+  </model-viewer>
+  <h3>Texture:1024 + KTX:ETC1S + Draco glb</h3>
+    <model-viewer
+      src="./obj/clt76_1024_etc1s_draco.glb"
       shadow-intensity="1"
       ar
       ar-modes="webxr scene-viewer quick-look"
